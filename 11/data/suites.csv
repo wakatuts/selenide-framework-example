@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Aug 15 15:00:23 GMT 2024","Thu Aug 15 15:00:24 GMT 2024","161","regression-test","regressionTests","com.wakatuts.DummyTest","com.wakatuts.DummyTest","dummyTest2","dummyTest2","Dummy Test Two"
+"passed","Thu Aug 15 15:00:23 GMT 2024","Thu Aug 15 15:00:24 GMT 2024","1155","regression-test","regressionTests","com.wakatuts.ContactTest","com.wakatuts.ContactTest","fillingContactForm4","fillingContactForm4","Contact Dummy Test Four"
+"passed","Thu Aug 15 15:00:21 GMT 2024","Thu Aug 15 15:00:23 GMT 2024","2212","regression-test","regressionTests","com.wakatuts.ContactTest","com.wakatuts.ContactTest","fillingContactForm3","fillingContactForm3","Contact Dummy Test Three"
+"passed","Thu Aug 15 15:00:21 GMT 2024","Thu Aug 15 15:00:23 GMT 2024","1938","regression-test","regressionTests","com.wakatuts.LoginTest","com.wakatuts.LoginTest","loginTest1","loginTest1","Login Test 1"
+"passed","Thu Aug 15 15:00:21 GMT 2024","Thu Aug 15 15:00:23 GMT 2024","2285","regression-test","regressionTests","com.wakatuts.ContactTest","com.wakatuts.ContactTest","fillingContactForm","fillingContactForm","Contact Dummy Test One"
+"passed","Thu Aug 15 15:00:23 GMT 2024","Thu Aug 15 15:00:24 GMT 2024","280","regression-test","regressionTests","com.wakatuts.DummyTest","com.wakatuts.DummyTest","dummyTest","dummyTest","Dummy Test One"
+"passed","Thu Aug 15 15:00:21 GMT 2024","Thu Aug 15 15:00:23 GMT 2024","2232","regression-test","regressionTests","com.wakatuts.ContactTest","com.wakatuts.ContactTest","fillingContactForm2","fillingContactForm2","Contact Dummy Test Two"
