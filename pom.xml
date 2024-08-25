@@ -24,6 +24,11 @@
     <lombok.version>1.18.34</lombok.version>
     <guice.version>7.0.0</guice.version>
     <instancio.version>4.8.1</instancio.version>
+    <log4j.version>2.20.0</log4j.version>
+    <sl4j.version>2.0.13</sl4j.version>
+    <log4j.sl4j.bind.version>2.23.1</log4j.sl4j.bind.version>
+    <commons.io.version>2.16.1</commons.io.version>
+    <jackson.databind.version>2.17.2</jackson.databind.version>
   </properties>
 
   <dependencyManagement>
@@ -48,7 +53,6 @@
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>${testng.version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>com.codeborne</groupId>
@@ -100,6 +104,43 @@
       <version>${instancio.version}</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-iostreams</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${sl4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${sl4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-slf4j2-impl</artifactId>
+      <version>${log4j.sl4j.bind.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>${commons.io.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson.databind.version}</version>
+    </dependency>
+
+
   </dependencies>
 
   <build>

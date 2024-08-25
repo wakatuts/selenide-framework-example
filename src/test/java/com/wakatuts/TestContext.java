@@ -12,7 +12,6 @@ public class TestContext extends AbstractModule {
 
     @Override
     public void configure() {
-
     }
 
     //MOCK DATA OBJECTS BELOW
@@ -20,9 +19,9 @@ public class TestContext extends AbstractModule {
     @Provides
     public ContactUsData contactUsData() {
         return Instancio.of(ContactUsData.class)
-                .generate(field("contactEmail"), gen -> gen.net().email().length(8))
+                .generate(field("contactEmail"), gen -> gen.net().email().length(10))
                 .generate(field("contactName"), gen -> gen.text().loremIpsum().words(2))
-                .generate(field("message"), gen -> gen.text().loremIpsum().words(50))
+                .generate(field("message"), gen -> gen.text().loremIpsum().words(10))
                 .create();
     }
 
