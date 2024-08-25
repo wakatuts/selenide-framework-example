@@ -24,11 +24,15 @@
     <lombok.version>1.18.34</lombok.version>
     <guice.version>7.0.0</guice.version>
     <instancio.version>4.8.1</instancio.version>
-    <log4j.version>2.20.0</log4j.version>
-    <sl4j.version>2.0.13</sl4j.version>
-    <log4j.sl4j.bind.version>2.23.1</log4j.sl4j.bind.version>
+    <log4j.version>2.23.1</log4j.version>
     <commons.io.version>2.16.1</commons.io.version>
     <jackson.databind.version>2.17.2</jackson.databind.version>
+    <io.rest-assured.version>5.5.0</io.rest-assured.version>
+    <logj42.masker.version>1.0.0-RC4</logj42.masker.version>
+    <apache.commons.text.version>1.12.0</apache.commons.text.version>
+    <assertj.core.version>3.26.3</assertj.core.version>
+    <jsonpath.version>2.9.0</jsonpath.version>
+    <javafaker.version>1.0.2</javafaker.version>
   </properties>
 
   <dependencyManagement>
@@ -83,6 +87,11 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-assertj</artifactId>
+      <version>${allure.version}</version>
+    </dependency>
+    <dependency>
       <groupId>org.aeonbits.owner</groupId>
       <artifactId>owner</artifactId>
       <version>${owner.version}</version>
@@ -115,19 +124,14 @@
       <version>${log4j.version}</version>
     </dependency>
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-simple</artifactId>
-      <version>${sl4j.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>${sl4j.version}</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>${log4j.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j2-impl</artifactId>
-      <version>${log4j.sl4j.bind.version}</version>
+      <artifactId>log4j-slf4j-impl</artifactId>
+      <version>${log4j.version}</version>
     </dependency>
     <dependency>
       <groupId>commons-io</groupId>
@@ -139,7 +143,46 @@
       <artifactId>jackson-databind</artifactId>
       <version>${jackson.databind.version}</version>
     </dependency>
-
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>${io.rest-assured.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-rest-assured</artifactId>
+      <version>${allure.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>tech.petrepopescu.logging</groupId>
+      <artifactId>log4j2</artifactId>
+      <version>${logj42.masker.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>tech.petrepopescu.logging</groupId>
+      <artifactId>masker</artifactId>
+      <version>${logj42.masker.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-text</artifactId>
+      <version>${apache.commons.text.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jayway.jsonpath</groupId>
+      <artifactId>json-path</artifactId>
+      <version>${jsonpath.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>${assertj.core.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>${javafaker.version}</version>
+    </dependency>
 
   </dependencies>
 

@@ -1,0 +1,17 @@
+{
+  "path": "/login",
+  "accept": "application/json",
+  "contentType": "application/json",
+  "defaults": {
+  },
+  "requestJsonPath": {
+    "username": "$.username",
+    "password": "$.password"
+  },
+  "requestTemplate": {
+    "username": "string",
+    "password": "string"
+  },
+  "responseJsonPath": {
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "path": "/addtocart",
+  "accept": "application/json",
+  "contentType": "application/json",
+  "defaults": {
+  },
+  "requestJsonPath": {
+    "id": "$.id",
+    "cookie": "$.cookie",
+    "prod_id": "$.prod_id",
+    "flag": "$.flag"
+  },
+  "requestTemplate": {
+    "id": "string",
+    "cookie": "string",
+    "prod_id": 0,
+    "flag": true
+  },
+  "responseJsonPath": {
+  }
+}

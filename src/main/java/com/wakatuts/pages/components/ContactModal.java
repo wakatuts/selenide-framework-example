@@ -14,7 +14,6 @@ public class ContactModal extends BaseComponent implements Fillable<ContactModal
     private final By messageInput = By.id("message-text");
     private final By sendMessageButton = By.xpath("//*[@class='modal-dialog']//button[@onclick='send()']");
 
-
     //ACTIONS
     @Step("Sending the contact")
     public ContactModal sendMessage() {

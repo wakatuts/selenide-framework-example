@@ -1,0 +1,15 @@
+{
+  "path": "/deleteitem",
+  "accept": "application/json",
+  "contentType": "application/json",
+  "defaults": {
+  },
+  "requestJsonPath": {
+    "id": "$.id"
+  },
+  "requestTemplate": {
+    "id": "string"
+  },
+  "responseJsonPath": {
+  }
+}

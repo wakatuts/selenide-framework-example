@@ -18,6 +18,9 @@ public interface FrameworkConfig extends Config {
     @Key("${environment}.web.url")
     String webBaseUrl();
 
+    @Key("${environment}.api.url")
+    String apiBaseUrl();
+
     @Key("${selenide.browser}options.args")
     String[] driverOptions();
 

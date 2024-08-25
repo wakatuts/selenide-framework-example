@@ -1,0 +1,18 @@
+{
+  "path": "/viewcart",
+  "accept": "application/json",
+  "contentType": "application/json",
+  "defaults": {
+  },
+  "requestJsonPath": {
+    "cookie": "$.cookie",
+    "flag": "$.flag"
+  },
+  "requestTemplate": {
+    "cookie": "string",
+    "flag": true
+  },
+  "responseJsonPath": {
+    "idsArray": "$..id"
+  }
+}

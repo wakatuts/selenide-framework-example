@@ -1,14 +1,14 @@
-package com.wakatuts.utils;
+package com.wakatuts.logging;
 
 import com.codeborne.selenide.logevents.LogEvent;
 import com.codeborne.selenide.logevents.LogEventListener;
-import lombok.extern.slf4j.Slf4j;
+import lombok.extern.log4j.Log4j2;
 
-@Slf4j
+@Log4j2
 public class ConsoleSelenide implements LogEventListener {
+
     @Override
     public void afterEvent(LogEvent logEvent) {
-      log.info(logEvent.toString());
     }
 
     @Override

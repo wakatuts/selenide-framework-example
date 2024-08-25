@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.experimental.Accessors;
 
 @Accessors(fluent = true)
-public class BasePage {
+public abstract class BasePage {
 
     @Inject @Getter private MenuBar menuBar;
 

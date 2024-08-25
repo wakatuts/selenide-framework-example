@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 
-@Accessors(fluent = true)
 public class MenuBar extends BaseComponent {
 
     //SELECTORS

@@ -9,9 +9,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
+import static com.wakatuts.constants.Constants.RESOURCE_PATH;
+
 public class TestDataHandler {
 
-    private static final String RESOURCE_PATH = FilenameUtils.separatorsToSystem("src/test/resources");
     private static final String USER_CRED_PATH = RESOURCE_PATH + FilenameUtils.separatorsToSystem("/credentials/Users.json");
 
     public static UserCredData getUserCredData(String alias) {

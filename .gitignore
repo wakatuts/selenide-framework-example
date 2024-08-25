@@ -1,4 +1,7 @@
 .idea
 .allure*
+allure*
 build
 target
+/src/test/resources/credentials/*.json
+/src/test/resources/credentials.tar

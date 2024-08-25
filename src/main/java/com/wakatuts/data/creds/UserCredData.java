@@ -9,5 +9,6 @@ public class UserCredData extends AbstractCredData {
 
     private String username;
     private String password;
+    private String uuid;
 
 }
