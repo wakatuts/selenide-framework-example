@@ -34,7 +34,7 @@ jobs:
         gpg --batch --passphrase "${{ secrets.CREDS_KEY }}" -d -o src/test/resources/credentials.tar src/test/resources/credentials.tar.gpg
         cd src/test/resources/
         tar -xvf credentials.tar
-        chmod -R 600 credentials
+        chmod -R 755 credentials
     
 
     - name: Run test with Maven
