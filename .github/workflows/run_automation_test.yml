@@ -63,6 +63,7 @@ jobs:
         gh_pages: gh-pages
         allure_history: allure-history
         allure_results: target/allure-results
+        keep_reports: 14
 
     - name: Publish test report
       uses: peaceiris/actions-gh-pages@v4
